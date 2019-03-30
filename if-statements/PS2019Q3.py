@@ -1,6 +1,6 @@
 # Agata Chmielowiec
 # 16/03/2019
-#Writing a program that prints all numbers between 1,000 and 10,000 that are divisible by 6 but not by 12
+# Writing a program that prints all numbers between 1,000 and 10,000 that are divisible by 6 but not by 12
 
     # produced basing on week 4 lecture "Continue and break"
 

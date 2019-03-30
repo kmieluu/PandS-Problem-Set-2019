@@ -1,7 +1,7 @@
 # Agata Chmielowiec  
 # 16/03/2019
 # Program that define if the number is dividable by 2 and divide by 2, if not multiplies by 3 and add 1
-# VVerbatim from: https://stackoverflow.com/questions/33508034/making-a-collatz-program-automate-the-boring-stuff
+# Verbatim from: https://stackoverflow.com/questions/33508034/making-a-collatz-program-automate-the-boring-stuff
 
 def collatz(num):
     

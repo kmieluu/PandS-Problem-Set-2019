@@ -1,13 +1,9 @@
-i = int(input("Please enter a positive integer: "))
+from datetime import datetime as dt
 
-def aga(i): #write a positive integer
-    
-    a, b = 0, 1
-    while a < i:
-        print(a, end=' ')
-        a, b = b, a+b
-    print()
-    
-# Now call the function we just defined:
-aga(2000)
+def suffix(d):
+    return 'th' if 11<=d<=13 else {1:'st',2:'nd',3:'rd'}.get(d%10, 'th')
 
+def custom_strftime(format, t):
+    return t.strftime(format).replace('{S}', str(t.day) + suffix(t.day))
+
+print custom_strftime('%B {S}, %Y', dt.now())
