@@ -3,16 +3,27 @@
 #Verbatim: https://docs.python.org/3/tutorial/stdlib.html#dates-and-times
 
 
-#time = time.asctime([time])
-# dates are easily constructed and formatted
-
-from datetime import datetime
+from datetime import datetime 
 now = datetime.today()
 day = now.strftime("%d")
+h = now.strftime("%H")
 
+if day == (1,21,31):
+    end = 'st'
 
-print(now.strftime(f"%A, %B %d %Y at %H:%Mpm"))
+if day ==(2,22):
+    end = 'nd'
 
-# dates support calendar arithmetic
-# birthday = date(1964, 7, 31)
-# age = now - birthday
+if day ==(3,23):
+    end = 'rd'
+
+else:
+    end = 'th'
+
+if h < '12:00':
+    h = 'am'
+
+else:
+    h = 'pm'
+
+print(now.strftime(f"%A, %B %d{end} %Y at %H:%M{h}"))
